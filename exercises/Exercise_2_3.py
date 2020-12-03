@@ -7,7 +7,6 @@ czy¢ ±redni¡ dla ka»dego z miesi¡ca i zapisa¢ ±rednie zmiany miesi¦czne 
 
 pliku. """
 
-from dataclasses import replace
 
 import pandas as pd
 

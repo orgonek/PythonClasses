@@ -9,10 +9,7 @@ saowie, wpisa¢ true  je»eli saowo jest palindromem i false, je»eli nie jest.
 import csv
 
 def check_palindrome(word):
-    if word == word[::-1]:
-        return True
-    else:
-        return False
+    return word == word[::-1]
 
 with open('1.txt', 'r', encoding='UTF-8') as file:
     count = 1

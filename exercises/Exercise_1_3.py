@@ -2,13 +2,13 @@
 u»y¢ metod wbudowanych dla list. """
 
 def display_second(arr):
-    list.reverse()
+    arr.reverse()
 
-    for i in range(len(arr)):
-        if i%2 == 0:
-            print(list[i],end= ' ')
+    for count,item in enumerate(arr):
+        if count%2 == 0:
+            print(arr[count],end= ' ')
 
 
-list = [1,2,3,4,5,6,7,8,9,10,11,12,['adam','ania']]
+l = [1,2,3,4,5,6,7,8,9,10,11,12,['adam','ania']]
 
-display_second(list)
+display_second(l)

@@ -1,4 +1,4 @@
-""" 
+"""
 Dany jest plik sesjaEgzaminacyjna.csv, w którym dane zapisane s¡ w nast¦puj¡cy
 sposób:
 • 30 Jan 2021 : Programowanie w Assembler
@@ -13,8 +13,8 @@ import csv
 from datetime import datetime
 
 with open("sesja.txt", ) as csv_file:
-   csv_reader = csv.reader(csv_file, delimiter = ':')
-   dict = {rows[0]:rows[1] for rows in csv_reader}
+    csv_reader = csv.reader(csv_file, delimiter = ':')
+    d = {rows[0]:rows[1] for rows in csv_reader}
 
 
 today = datetime.today()
@@ -26,4 +26,3 @@ for key in dict.keys():
         exams+=1
 
 print(exams)
-

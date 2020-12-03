@@ -4,14 +4,14 @@ która przyjmuje tak¡ list¦ jako parametr i dzieli j¡ na 4 nowe listy zawiera
 elementy string, oat, int oraz boolean. """
 
 import random
-import string 
+import string
 
-def generate_value(x):
-    if x == 0:
+def generate_value(value):
+    if value == 0:
         return random.choice(string.ascii_letters)
-    elif x == 1:
+    elif value == 1:
         return random.uniform(0,100)
-    elif x == 2:
+    elif value == 2:
         return random.randint(0,100)
     else:
         return bool(random.choice(['True','False']))
@@ -23,21 +23,21 @@ def generate_list(n):
     return list
 
 def extract_list(list):
-    strList, floList,intList,boolList = [],[],[],[]
-    for x in list:
-        if isinstance(x,str):
-            strList.append(x)
-        elif isinstance(x,float):
-            floList.append(x)
-        elif isinstance(x,bool):
-            boolList.append(x)
+    str_list, flo_list,int_list,bool_list = [],[],[],[]
+    for item in list:
+        if isinstance(item,str):
+            str_list.append(item)
+        elif isinstance(item,float):
+            flo_list.append(item)
+        elif isinstance(item,bool):
+            bool_list.append(item)
         else:
-            intList.append(x)
-    return strList,floList,intList,boolList 
+            int_list.append(item)
+    return str_list,flo_list,int_list,bool_list
 
 
 
 n = int(input('Enter number of elements '))
-list = generate_list(n)
-print(list)
-extract_list(list)
+l = generate_list(n)
+print(l)
+extract_list(l)

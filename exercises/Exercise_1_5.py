@@ -3,14 +3,14 @@ na li±cie znajduj¡ si¦ liczby i aa«cuchy. Zakaadamy, »e wszystkie elementy 
 znajduj¡ si¦ na pocz¡tku, a aa«cuchy znajduj¡ si¦ w dalszej cz¦±ci listy - posortowane
 saownikowo. """
 
-def custom_sort(list):
-    stringList = [x for x in list if isinstance(x, str)]
-    numberList = [x for x in list if isinstance(x, int)]
+def custom_sort(custom_list):
+    string_list = [x for x in custom_list if isinstance(x, str)]
+    number_list = [x for x in custom_list if isinstance(x, int)]
 
-    stringList.sort()
-    numberList.sort()
+    string_list.sort()
+    number_list.sort()
 
-    return numberList+stringList
+    return number_list+string_list
 
-list = ["ab",2,"aa",51,3,'ba',213,199,'cad','bu']
-print(custom_sort(list))
+list_sample = ["ab",2,"aa",51,3,'ba',213,199,'cad','bu']
+print(custom_sort(list_sample))
