@@ -16,17 +16,17 @@ def convert_date(custom_format, date):
 
     variables = re.split('([^a-zA-Z])',custom_format)
     values = {
-        'dd':'d',
-        'mm':'m',
-        'yy':'y',
-        'yyyy':'Y',
+        'dd':'%d',
+        'mm':'%m',
+        'yy':'%y',
+        'yyyy':'%Y',
     }
 
     data_string = ''
 
     for value in variables:
         if value in values:
-            data_string += f'%{values.get(value)}'
+            data_string += values.get(value)
         else:
             data_string += value
 
