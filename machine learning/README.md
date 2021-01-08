@@ -11,3 +11,5 @@
 
 [Keras - Census Income ](https://github.com/orgonek/PythonClasses/blob/master/machine%20learning/CensusKeras/census_keras_empty.ipynb)
 
+[CNN - Fashion MNIST ](https://github.com/orgonek/PythonClasses/blob/master/machine%20learning/CNN/CNN.ipynb)
+
