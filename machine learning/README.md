@@ -13,3 +13,8 @@
 
 [CNN - Fashion MNIST ](https://github.com/orgonek/PythonClasses/blob/master/machine%20learning/CNN/CNN.ipynb)
 
+[KMeans](https://github.com/orgonek/PythonClasses/blob/master/machine%20learning/KMeans/KMeans.ipynb)
+
+[Transfer learning](https://github.com/orgonek/PythonClasses/blob/master/machine%20learning/Xception/Xception.ipynb)
+
+
